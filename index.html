@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video mannegment</title>
+    <Style>
+#form{
+ 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+  
+}
+
+.inputfield{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+   gap: 20px;
+   background-image:url("web_nature.jpeg") ;
+   background-size: 100% 100%;
+  padding: 200px;
+  
+   
+}
+
+.inp1{
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+label{
+    color: white;
+    font-size: 20px;
+  font-weight: bold;
+   
+}
+
+#btn{
+    padding: 4px 30px 4px 30px;
+    font-size: 32px;
+    border-radius: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.container{
+    position: relative;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.right{
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right h2{
+    color:rgb(165, 19, 16);
+    border-radius: 20px;
+    background-color: aqua;
+    padding: 5px 20px 5px 20px;
+}
+
+.left{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    gap:20px
+}
+
+.left a{
+    text-decoration: none;
+}
+
+#login{
+    text-decoration: none;
+}
+
+</Style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="right">
+                <h2>Video library management System </h2>
+              
+
+            </div>
+            <div id="contact" class="left">
+                <a href="contact.html">Contact me</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+        <p id="span"></p>
+    </nav>
+    <form id="form">
+        <div class="inputfield">
+        <div><label ><input type="text" class="inp1" id=inp1 placeholder="enter name"> </label></div>
+        <div> <label ><input type="email" class="inp1" id=inp2 placeholder="enter email"> </label></div>
+        <div><label ><input type="password" class="inp1" id=inp3 placeholder="enter password"> </label></div>
+        <div>
+            <button id="btn" type="submit" onclick="show()"> <a id="login" href="page1.html">log in</a></button>
+        </div>
+        
+        
+    </div>
+    <div>
+       
+    </div>
+</form>
+   
+    
+
+
+<Script>
+  
+  const inp2=  document.getElementById ("inp2");
+  const inp3=  document.getElementById ("inp3");
+function show(){
+const inp1value=  document.getElementById ("inp1").value;
+
+if(inp1value)
+alert("Login completed")
+}
+const displayitem=document.getElementById ("span");
+displayitem.innerHTML="abcihfj"
+document.getElementById ("contact").addEventListener("onclick",()=>alert("Hi"))
+function displayitem(){
+    displayitem.innerHTML="name:SUNDAR LAL BISWAS, 9609822823, sundarlal.me@gmail.com"}
+</Script>
+</body>
+</html>

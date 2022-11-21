@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <style>
+        #navbar{
+            margin: 40px;
+            display: flex;
+            gap: 75px;
+            flex-direction: row;
+        }
+        a{
+            font-size: 25px;
+        }
+        #inp{
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 5px 20px 5px 20px;
+        }
+        .videocontener{
+            border: 2px;
+            margin: 50px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            
+        }
+        video{
+            border-radius: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <nav id="navbar">
+        <div> 
+            <a href="index.html"> Back</a>
+        </div>
+        <div class="search">
+            <input id="inp"type="text"placeholder="...search"/>
+
+        </div>
+    </nav>
+    <div class="videocontener">
+        <video controls width="250">
+            <source src="pexels-peter-fowler-6394054.mp4"
+            type="video/mp4">
+         </video>
+
+
+        <video controls width="250">
+            <source src="pexels-mikhail-nilov-6981411.mp4"
+            type="video/mp4"> 
+        </video>
+
+
+        <video controls width="250">
+            <source src="Pexels Videos 2402369.mp4"
+            type="video/mp4"> 
+        </video>
+
+        <video controls width="250">
+            <source src="production ID_4887473.mp4"
+            type="video/mp4"> 
+        </video>
+    </div>
+    </div>
+    
+</body>
+</html>
